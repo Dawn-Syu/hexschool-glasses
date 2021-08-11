@@ -1,0 +1,22 @@
+.nav_group{
+    background-color: $primary;
+    padding: 24px 88px;
+    a{
+        .nav_group img {
+            width: 80px;
+            height: 48.57px;
+        }
+    }
+    .nav{
+        a {
+            color: white;
+            text-decoration:none;
+            margin-left: 44px;
+            padding: 10px;
+        &:hover{
+            color: yellow;
+            border-bottom: 1px solid yellow;
+        }
+        }
+    }
+}

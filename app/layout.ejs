@@ -7,17 +7,80 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
   <header class="header">
-    這是 header
+  <ul class="nav_group d_f_jc_sb">
+    <li>
+    <h1><a href="#">
+      <img src="/assets/images/logo.png" alt="LOGO_index"></a>
+     </h1>
+    </li>
+    <li class="nav d_f_jc_sb fz20lh30">
+      <a href="#">系列鏡框</a>
+      <a href="#">門市據點</a>
+      <a href="#">部落格</a>
+      <a href="#">常見問題</a>
+    </li>
+  </ul>
+
   </header>
 
   <%- contents %>
 
   <footer class="footer">
-    footer
+    <div class="container">
+      <div class="footer_group pt_4 mb_5">
+        <div class="footer_navs d_f_jc_sb mb_3">
+        <ul class="footer_nav d_f_jc_sb ">
+            <li class="footer_nav_a  mr_6" ><a href="">首頁</a></li>
+            <li class="footer_nav_a  mr_6"><a href="">系列鏡框</a></li>
+            <li class="footer_nav_a  mr_6"><a href="">門市據點</a></li>
+            <li class="footer_nav_a  mr_6"><a href="">部落格</a></li>
+            <li class="footer_nav_a  mr_6"><a href="">常見問題</a></li>
+          </ul>
+          <ul class="footer_navs_icons d_f_jc_sb">
+            <li class="footer_navs_icon">
+              <a href="#">
+                <img src="/assets/images/icon-fb.svg" alt="">
+              </a>
+              </li>
+            <li class="footer_navs_icon mr_4 ml_4">
+              <a href="#">
+                <img src="/assets/images/icon-ig.svg" alt="">
+              </a>
+            </li>
+            <li class="footer_navs_icon">
+              <a href="#">
+                <img src="/assets/images/icon-line.svg" alt="">
+              </a>
+              </li>
+          </ul>
+        </div>
+        <ul class="footer_shop_contents">
+          <li class="footer_shop_content pb_2">
+            <img class="tel_size" src="/assets/images/icon-phone.svg" alt="tel">
+            <a class="ml_3" href="tel:0800000000">0800-000-000</a>
+          </li>
+          <li class="footer_shop_content pb_2">
+            <img class="mail_size" src="/assets/images/icon-mail.svg" alt="mail">
+            <a class="ml_3 " href="mailto:glasses@business.com">glasses@business.com
+            </a>
+        </li>
+        </ul>
+      </div>
+      <ul class="footer_ccs d_f_jc_sb pb_5">
+        <li class="footer_cc">
+          Copyright © 2020 Glasses.All rights reserved.
+        </li>
+        <li class="footer_cc_privace d_f_jc_sb">
+          <a href="#">隱私權政策</a>
+          <a class="ml_6" href="#">服務條款 </a>
+        </li>
+      </ul>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>

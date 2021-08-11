@@ -1,0 +1,137 @@
+.banner{
+    width: 100%;
+    height: 840px;
+    background-image: url('/assets/images/banner.png');
+    .container{
+        .banner_texts{
+            .banner_text{
+                text-align: end;
+                color : $secondary;
+                padding-top:400px;
+                .banner_text_small{
+                    font-size: 36px;
+                    line-height: 54px;
+                }
+                .banner_text_big{
+                    font-weight: bolder;
+                    font-size: 64px;
+                    line-height: 96px;
+                }
+            }
+        }
+    }
+}
+
+.profession{
+    .profession_cards{
+        .profession_card{
+            width: 255px;
+            text-align: center;
+            img {
+                width: 83.33px;
+                height: 83.33px;
+            }            
+        }
+    }
+}
+
+.basic{
+    .basic_products{
+        .basic_product_card{
+            .product_img {
+                width: 635px;
+                height: 320px;
+            }
+            .basic_product_card_texts{
+                align-items: center;
+                h3{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+.brand{
+    background-image: url('/assets/images/bg.png');
+    .container{
+        h3 {
+            color: white;
+            text-align: center;
+        }
+        .brand_cards{
+            .brand_card{
+                position: relative;
+                img{
+                    width: 540px;
+                    height: 445px; 
+                }
+                .mask{
+                    width: 540px;
+                    height: 445px;
+                    background-color: #fff;
+                    opacity: 0.5;
+                    position: absolute;
+                    top: 0;
+                }
+                h2 {
+                    color: $primary;
+                    position: absolute;
+                    top: 40%;
+                    left: 25%;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+.feedback{
+    .feedback_cards{
+        .feedback_card{
+            width: 255px;
+            height: 460px;
+            // display:inline-block;
+            background-color:white;   
+            box-shadow:1px 1px 9px rgb(211, 209, 209);
+            img{
+                width: 255px;
+                height: 256px;
+            }           
+        }
+    }
+}
+
+.contact_us{
+    h3{
+        color: #000;
+    }
+    .forms{
+        width: 730px;
+        margin: 0 auto;
+        .form{
+            .input_w100{
+                width: 100%;
+                height: 50px;
+            }
+            textarea{
+                resize: none;
+                width: 100%;
+            }
+            .form_btn{
+                width: 350px;
+                height: 45px;
+                background-color:$primary;
+                margin: 0 auto;
+                text-align: center;
+                a{
+                    display: block;
+                    color: white;
+                    text-decoration:none;
+                    &:hover{
+                        color:blue;
+                    }
+                }
+            }
+        }
+    }
+}
