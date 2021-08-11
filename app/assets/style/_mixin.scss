@@ -5,6 +5,10 @@ body{
 h2{
     font-size: 72px;
     line-height: 108px;
+    @media(max-width:1200px){
+        font-size: 32px;
+        line-height: 25px;
+    }
 }
 h3{
     font-size: 48px;
@@ -12,12 +16,23 @@ h3{
     font-weight:bolder;
     text-align: center;
     color: $secondary;
+    @media(max-width:1200px){
+        font-size: 32px;
+        line-height: 48px;
+    }
+    @media(max-width:375px){
+        font-size: 20px;
+    }
 }
 h4{
     font-size: 24px;
     line-height: 36px;
     font-weight: bolder;
     color: $secondary;
+    @media(max-width:1200px){
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 .d_f_jc_c{
     display: flex;
@@ -45,6 +60,18 @@ h4{
 .container{
     width: 1110px;
     margin: 0 auto;
+    @media(max-width:1240px){
+        width: 1024px;
+    }
+    @media(max-width:992px){
+        width: 768px;
+    }
+    @media(max-width:768px){
+        width: 690px;
+    }
+    @media(max-width:375px){
+        width: 344.5px;
+    }
 }
 .fz20lh30{
     font-size: 20px;

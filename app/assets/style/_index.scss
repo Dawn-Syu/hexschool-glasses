@@ -11,11 +11,27 @@
                 .banner_text_small{
                     font-size: 36px;
                     line-height: 54px;
+                    @media(max-width:768px){
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    @media(max-width:768px){
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
                 }
                 .banner_text_big{
                     font-weight: bolder;
                     font-size: 64px;
                     line-height: 96px;
+                    @media(max-width:768px){
+                        font-size: 48px;
+                        line-height: 72px;
+                    }
+                    @media(max-width:375px){
+                        font-size: 32px;
+                        line-height: 72px;
+                    }
                 }
             }
         }
@@ -23,29 +39,84 @@
 }
 
 .profession{
+    @media(max-width:768px){
+        margin-top: 40px;
+        margin-bottom: 56px;
+    }
+    h3{
+        @media(max-width:768px){
+            margin-bottom: 0;
+        }    
+    }
     .profession_cards{
+        @media(max-width:768px){
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+        @media(max-width:375px){
+            justify-content: center;
+        }
         .profession_card{
             width: 255px;
             text-align: center;
             img {
-                width: 83.33px;
+                max-width:100%;
                 height: 83.33px;
-            }            
+            }
+            @media(max-width:768px){
+                margin-bottom: 40px;
+            }                
         }
     }
 }
 
 .basic{
+    @media(max-width:768px){
+        margin-top: 40px;
+        margin-bottom: 56px;
+    }
+    @media(max-width:375px){
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    h3{
+        @media(max-width:768px){
+            margin-bottom: 32px;
+        }
+    }
     .basic_products{
         .basic_product_card{
+            @media(max-width:768px){
+                flex-direction:row;
+                margin-bottom: 8px;
+            }
+            @media(max-width:375px){
+                position: relative;
+            }
             .product_img {
-                width: 635px;
-                height: 320px;
+                max-width:100%;
+                @media(max-width:768px){
+                   max-width:390px;
+                }
+                @media(max-width:375px){
+                    margin: 0 0;
+                    max-width:345px;
+                 }
             }
             .basic_product_card_texts{
                 align-items: center;
                 h3{
                     color: $primary;
+                    @media(max-width:375px){
+                        font-size: 28px;
+                        line-height: 72px;
+                        }
+                }
+                @media(max-width:375px){
+                    position:absolute;
+                    left: 25%;
+                    top: 20%;
+
                 }
             }
         }
@@ -53,17 +124,50 @@
 }
 .brand{
     background-image: url('../images/bg.png');
+
+    // @media(max-width:375px){
+    //     margin-top: 32px;
+    //     margin-bottom: 40px;
+    // }
+
     .container{
+        @media(max-width:768px){
+        padding-top: 40px;
+        padding-bottom: 56px;
+        }
         h3 {
             color: white;
             text-align: center;
+            @media(max-width:768px){
+                margin-bottom: 32px;
+            }
         }
         .brand_cards{
+            @media(max-width:375px){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
             .brand_card{
                 position: relative;
                 img{
                     width: 540px;
                     height: 445px; 
+                    @media(max-width:1240px){
+                        width: 485px;
+                        height: 375px; 
+                    }
+                    @media(max-width:992px){
+                        width: 435px;
+                        height: 295px; 
+                    }
+                    @media(max-width:768px){
+                        width: 330px;
+                        height: 278px;          
+                    }
+                    @media(max-width:375px){
+                        width: 345px;
+                        height: 291px;  
+                    }
                 }
                 .mask{
                     width: 540px;
@@ -72,6 +176,22 @@
                     opacity: 0.5;
                     position: absolute;
                     top: 0;
+                    @media(max-width:1240px){
+                        width: 485px;
+                        height: 375px; 
+                    }
+                    @media(max-width:992px){
+                        width: 435px;
+                        height: 295px; 
+                    }
+                    @media(max-width:768px){
+                        width: 330px;
+                        height: 278px;              
+                    }
+                    @media(max-width:375px){
+                        width: 345px;
+                        height: 291px;              
+                    }
                 }
                 h2 {
                     color: $primary;
@@ -79,6 +199,13 @@
                     top: 40%;
                     left: 25%;
                     font-weight: bolder;
+                    @media(max-width:768px){
+                        top: 43%;
+                        left: 31%;           
+                    }
+                }
+                @media(max-width:375px){
+                    margin-left: 0;
                 }
             }
         }
@@ -86,36 +213,73 @@
 }
 
 .feedback{
+    @media(max-width:768px){
+        margin-top: 40px;
+        margin-bottom: 56px;
+    }
+    @media(max-width:375px){
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    h3{
+        @media(max-width:768px){
+            margin-bottom: 32px;
+        }    
+    }
     .feedback_cards{
+        @media(max-width:768px){
+            flex-wrap: wrap;
+        }
         .feedback_card{
             width: 255px;
             height: 460px;
-            // display:inline-block;
             background-color:white;   
             box-shadow:1px 1px 9px rgb(211, 209, 209);
             img{
-                width: 255px;
+                width:100%;
                 height: 256px;
+            }  
+            @media(max-width:768px){
+                margin-right: 0;
+                margin-left: 0;
+                width: 330px;
+                margin-bottom: 32px;
+            } 
+            @media(max-width:375px){
+                width: 345px;
             }           
         }
     }
 }
 
 .contact_us{
+    @media(max-width:768px){
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
     h3{
         color: #000;
+        @media(max-width:768px){
+            margin-bottom: 24px;
+        } 
     }
     .forms{
         width: 730px;
         margin: 0 auto;
+        @media(max-width:768px){
+            width: 450px;
+        } 
+        @media(max-width:375px){
+            width: 345px;
+        }   
         .form{
             .input_w100{
-                width: 100%;
+                width:100%;
                 height: 50px;
             }
             textarea{
                 resize: none;
-                width: 100%;
+                width:100%;
             }
             .form_btn{
                 width: 350px;
@@ -131,6 +295,14 @@
                         color:blue;
                     }
                 }
+                @media(max-width:375px){
+                    width: 210px;
+                    height: 40px;
+                } 
+                @media(max-width:375px){
+                    width: 165px;
+                    height: 36px;
+                } 
             }
         }
     }
